@@ -14,6 +14,4 @@ export class IPokemon {
     attacks?: Attack[];
     specOffStat?: number;
     specDefStat?: number;
-    abilities?: Ability[];
-    items?: Item[];
 }

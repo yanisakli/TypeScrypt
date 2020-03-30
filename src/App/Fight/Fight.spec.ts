@@ -8,7 +8,7 @@ describe('It should be Pikachu', () => {
         speed: 90,
     });
     const bulbizard: Pokemon = new Pokemon({
-        name: 'bulbizard',
+        name: 'Bulbizard',
         speed: 48,
     });
 

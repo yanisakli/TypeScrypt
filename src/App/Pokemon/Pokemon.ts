@@ -15,8 +15,6 @@ export class Pokemon {
     attacks: Attack[];
     specOffStat: number;//
     specDefStat: number;//
-    abilities: Ability[];//
-    items: Item[];//
 
     constructor (pokemon?: IPokemon)
     {
@@ -32,8 +30,6 @@ export class Pokemon {
         this.attacks = pokemon && pokemon.attacks;
         this.specOffStat = pokemon && pokemon.specOffStat;
         this.specDefStat = pokemon && pokemon.specDefStat;
-        this.abilities = pokemon && pokemon.abilities;
-        this.items = pokemon && pokemon.items;
     }
 
     public loseHealth (dammages: number): void {

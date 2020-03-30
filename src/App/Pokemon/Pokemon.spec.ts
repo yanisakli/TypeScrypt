@@ -19,21 +19,23 @@ describe('Pokemon logic model', () => {
       defStat: 40,
       maxHealth: 30,
     })
-
     MathRandom = Math.random;
     Math.random = () => 0.25;
+  });
+
+
+  afterEach( () => {
+    Math.random = MathRandom;
+})
+
+  it('Pikachu should have 0 Health after lost 200 ', () => {
+    pikachu.loseHealth(200);
+    expect(pikachu.health).toBe(0);
   });
 
   it('Pikachu should have 10 Health after lost 20', () => {
     pikachu.loseHealth(20);
     expect(pikachu.health).toBe(10);
   });
-  it('Pikachu should have 0 Health after lost 100 ', () => {
-    pikachu.loseHealth(100);
-    expect(pikachu.health).toBe(0);
-  });
 
-  afterEach( () => {
-      Math.random = MathRandom;
-  })
 });

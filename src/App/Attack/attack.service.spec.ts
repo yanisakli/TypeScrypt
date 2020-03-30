@@ -2,7 +2,7 @@ import AttackService from './attack.service';
 import { Pokemon, Attack } from '../..';
 import { Pikachu, Bulbizard } from '../../pokemons';
 
-describe('AttackServices logic service', () => {
+describe('Attack', () => {
   let pikachu: Pokemon;
   let bulbizard: Pokemon;
   let eclair: Attack
@@ -18,10 +18,8 @@ describe('AttackServices logic service', () => {
       name: 'Déflagration',
       basePower: 35
     });
-
     pikachu = Pikachu;
     bulbizard = Bulbizard;
-
     attackServices = new AttackService();
   })
 
@@ -35,12 +33,12 @@ describe('AttackServices logic service', () => {
     expect(dammages).toBe(3)
   });
 
-  it('After attack, Bulbizard should have 19HP', () => {
+  it('Bulbizard should have 19 health', () => {
     let _ = attackServices.attack(pikachu, eclair, bulbizard)
     expect(bulbizard.health).toBe(19)
   });
 
-  it('Attack should return 29 (damages)', () => {
+  it('Attack should return 29 dammages ', () => {
     let dammages = attackServices.attack(pikachu, eclair, bulbizard)
     expect(dammages).toBe(29)
   });

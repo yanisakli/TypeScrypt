@@ -12,27 +12,21 @@ export var Pikachu = new Pokemon({
 	maxHealth: 30,
 	attacks: [
 		new Attack({
-			name: 'Eclair',
-			basePower: 40
-		}),
-		new Attack({
 			name: 'Charge',
 			basePower: 20
 		}),
 		new Attack({
-			name: 'Tonnerre',
-			basePower: 60
+			name: 'Eclair',
+			basePower: 40
 		}),
 		new Attack({
 			name: 'Rugissement',
 			basePower: 1
+		}),
+		new Attack({
+			name: 'Tonnerre',
+			basePower: 60
 		})
-	],
-	abilities: [
-		Ability.Tailwind
-	],
-	items: [
-		Item.MachoBrace
 	],
 	basePower: 112
 })
@@ -52,23 +46,13 @@ export var Bulbizard = new Pokemon({
 			basePower: 5
 		}),
 		new Attack({
-			name: 'Flammèche',
-			basePower: 25
-		}),
-		new Attack({
-			name: 'Lèchouille',
-			basePower: 75
-		}),
-		new Attack({
 			name: 'Déflagration',
 			basePower: 40
+		}),
+		new Attack({
+			name: 'Flammèche',
+			basePower: 25
 		})
-	],
-	abilities: [
-		Ability.SandRush
-	],
-	items: [
-		Item.PowerLens
 	],
 	basePower: 108
 });
