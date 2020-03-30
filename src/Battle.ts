@@ -1,19 +1,19 @@
-import { Pokemon } from "./App/Models/Pokemon/Pokemon";
+import { Pokemon } from "./App/Pokemon/Pokemon";
 
 
-function getRandomInt(max: number): number {
-    return Math.floor(Math.random() * Math.floor(max));
+function randomInt(numberMax: number): number {
+    return Math.floor(Math.random() * Math.floor(numberMax));
 }
 
 export class Battle{
-    static fightFirst(pok1: Pokemon, pok2: Pokemon): Pokemon {
-        if(pok1.speed > pok2.speed){
-            return pok1;
-        } else if (pok2.speed > pok1.speed) {
-            return pok2;
+    static fight(pokemon1: Pokemon, pokemon2: Pokemon): Pokemon {
+        if(pokemon1.speed > pokemon2.speed){
+            return pokemon1;
+        } else if (pokemon2.speed > pokemon2.speed) {
+            return pokemon1;
         } else {
-            const rand = getRandomInt(2);
-            return rand === 0 ? pok1 : pok2;
+            const rand = randomInt(2);
+            return rand === 0 ? pokemon1 : pokemon2;
         }
     }
 }

@@ -1,4 +1,4 @@
-import { Pokemon } from "./App/Models/Pokemon/Pokemon";
+import { Pokemon } from "./App/Pokemon/Pokemon";
 
 
 export var Pikachu = new Pokemon({
