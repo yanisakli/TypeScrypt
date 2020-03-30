@@ -5,7 +5,15 @@
   "repository": "https://github.com/yanisakli/TypeScrypt",
   "author": "Yanis <yanisakli@yahoo.fr>",
   "license": "MIT",
+  "scripts": {
+    "start": "tsc",
+    "test": "jest"
+  },
   "devDependencies": {
-    "jest": "^25.2.4"
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.5",
+    "jest": "^25.2.4",
+    "ts-jest": "^25.3.0",
+    "typescript": "^3.8.3"
   }
 }
