@@ -7,12 +7,12 @@ describe('It should be Pikachu', () => {
         name: 'Pikachu',
         speed: 90,
     });
-    const ditto: Pokemon = new Pokemon({
-        name: 'Ditto',
+    const bulbizard: Pokemon = new Pokemon({
+        name: 'bulbizard',
         speed: 48,
     });
 
     test('should pick pikachu', () => {
-        expect(Battle.fight(ditto, pikachu)).toBe(pikachu);
+        expect(Battle.fight(bulbizard, pikachu)).toBe(pikachu);
     });
 });

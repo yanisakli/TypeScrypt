@@ -1,5 +1,6 @@
 import { IPokemon } from './IPokemon';
 import { Attack } from '../Attack/Attack';
+import { Ability, Item } from '../..';
 
 export class Pokemon {
     id: number;
@@ -11,6 +12,11 @@ export class Pokemon {
     maxHealth: number;
     health: number;
     basePower: number;
+    attacks: Attack[];
+    specOffStat: number;//
+    specDefStat: number;//
+    abilities: Ability[];//
+    items: Item[];//
 
     constructor (pokemon?: IPokemon)
     {
@@ -23,6 +29,11 @@ export class Pokemon {
         this.maxHealth = pokemon && pokemon.maxHealth;
         this.basePower = pokemon && pokemon.basePower;
         this.health = this.maxHealth;
+        this.attacks = pokemon && pokemon.attacks;
+        this.specOffStat = pokemon && pokemon.specOffStat;
+        this.specDefStat = pokemon && pokemon.specDefStat;
+        this.abilities = pokemon && pokemon.abilities;
+        this.items = pokemon && pokemon.items;
     }
 
     public loseHealth (dammages: number): void {

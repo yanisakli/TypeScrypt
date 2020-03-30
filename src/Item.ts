@@ -8,4 +8,6 @@ export enum Item {
 	LifeOrb = "life-orb",
 	Metronome = "metronome",
 	ExpertBelt = "expert-belt",
+	MachoBrace = "MachoBrace",
+	PowerLens = "PowerLens"
 }

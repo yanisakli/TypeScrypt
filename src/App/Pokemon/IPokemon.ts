@@ -1,4 +1,5 @@
 import { Attack } from "../Attack/Attack";
+import { Ability, Item } from "../..";
 
 export class IPokemon {
     id?: number;
@@ -10,4 +11,9 @@ export class IPokemon {
     maxHealth?: number;
     health?: number;
     basePower?: number;
+    attacks?: Attack[];
+    specOffStat?: number;
+    specDefStat?: number;
+    abilities?: Ability[];
+    items?: Item[];
 }
