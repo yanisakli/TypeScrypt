@@ -1,4 +1,4 @@
-import { Pokemon } from "./App/Pokemon/Pokemon";
+import { Pokemon } from "../Pokemon/Pokemon";
 
 
 function randomInt(numberMax: number): number {

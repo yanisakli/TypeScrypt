@@ -1,6 +1,6 @@
 import { Pikachu, Ditto } from "../../Pokemons";
-import { Pokemon } from "./Pokemon";
-import { Battle } from "../../Battle";
+import { Pokemon } from "../Pokemon/Pokemon";
+import { Battle } from "./Fight";
 
 
 describe('It should be Pikachu', () => {
